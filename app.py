@@ -17,8 +17,8 @@ sum_has_anemia = np.sum(has_anemia)
 # TODO: print(has_anemia) 
 # TODO: print(data)
 # TODO: print(ages)
-print(f"El promedio de edad de las personas participantes en el estudio es: {average_age:.2f}" )
 print(f"\n{sum_has_anemia} personas tienen anemia.")
+print(f"El promedio de edad de las personas participantes en el estudio es: {average_age:.2f}" )
 
 
 
