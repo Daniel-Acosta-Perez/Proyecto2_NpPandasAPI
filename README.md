@@ -1,4 +1,4 @@
-<h1> Proyecto 2</h1>
+<h1> Proyecto 2; manejo de numpy, pandas y APIs</h1>
 
 <h2>Parte 1: Introducción al análisis de datos</h2>
 
