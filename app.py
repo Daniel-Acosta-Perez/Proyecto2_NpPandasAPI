@@ -20,7 +20,7 @@ sum_has_anemia = np.sum(has_anemia)
 # TODO: print(data)
 # TODO: print(ages)
 print(f"\n{sum_has_anemia} personas tienen anemia.")
-print(f"El promedio de edad de las personas participantes en el estudio es: {average_age:.2f}" )
+print(f"El promedio de edad de las personas participantes en el estudio es: {average_age:.2f}\n" )
 
 
 #?Implementacion parte 2
@@ -36,4 +36,23 @@ av_age_survived = survived_df['age'].mean()
 print(f"Promedio de edad de personas que perecieron: {av_age_dead:.2f}")
 print(f"Promedio de edad de personas que sobrevivieron: {av_age_survived:.2f}")
 
+#? Implementacion Parte 3
+#Primera forma de verlo
+smoker_counts = df.groupby(['is_male', 'is_smoker']).size().unstack()
 
+# Cambiar nombres de las columnas
+smoker_counts.columns = ['No Fumador', 'Fumador']
+# Cambiar nombres de los índices(Filas)
+smoker_counts.index = ['Mujer', 'Hombre']
+
+print("\nCantidad de hombres fumadores vs mujeres fumadoras:")
+print(f"{smoker_counts}\n")
+
+#Segunda forma de verlo
+df_men = df[df['is_male'] == 1]
+df_women = df[df['is_male'] == 0]
+num_smoking_men = df_men[df_men['is_smoker'] == 1]['is_smoker'].count()
+num_smoking_women = df_women[df_women['is_smoker'] == 1]['is_smoker'].count()
+
+print(f"Hombres fumadores: {num_smoking_men}") 
+print(f"Mujeres fumadoras: {num_smoking_women}")
