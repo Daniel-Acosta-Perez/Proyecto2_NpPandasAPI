@@ -28,6 +28,7 @@
 <p>Tu tarea para esta etapa del proyecto integrador es convertir la lista de edades a un arreglo de NumPy y calcular el promedio de edad de las personas participantes en el estudio.</p>
 
 <h2>Parte 2: Carga de datos</h2>
+
 <p>Continuando con la anterior sección del proyecto integrador, ahora debes realizar lo siguiente:</p>
 <ul>
     <li>Convertir la estructura Dataset en un DataFrame de Pandas usando pd.DataFrame.</li>
@@ -35,3 +36,10 @@
     <li>Calcular los promedios de las edades de cada dataset e imprimir.</li>
 </ul>
 
+<h2>Parte 3: Calculando analíticas simples</h2>
+
+<p>Continuando con el DataFrame con todos los datos de la anterior subsección, ahora debes:</p>
+<ul>
+    <li>Verificar que los tipos de datos son correctos en cada colúmna (por ejemplo que no existan colúmnas numéricas en formato de cadena).</li>
+    <li>Calcular la cantidad de hombres fumadores vs mujeres fumadoras (usando agregaciones en Pandas).</li>
+</ul>
