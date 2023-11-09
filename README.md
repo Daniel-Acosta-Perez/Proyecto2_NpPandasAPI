@@ -5,7 +5,6 @@
 <p>El proyecto de este curso consiste en analizar el conjunto de datos introducido en esta sección, procesarlo, limpiarlo y finalmente ajustar modelos de machine learning para realizar predicciones sobre estos datos.</p>
 
 <p>Vamos a trabajar con un dataset sobre fallo cardíaco</p>
-
 <p>El dataset contiene registros médicos de 299 pacientes que padecieron insuficiencia cardíaca durante un período de seguimiento.</p>
 
 <h3>Características Clínicas</h3>
@@ -25,3 +24,14 @@
     <li><strong>Tiempo:</strong> período de seguimiento (días)</li>
     <li><strong>[Objetivo] Evento de fallecimiento:</strong> si el paciente falleció durante el período de seguimiento (booleano)</li>
 </ul>
+
+<p>Tu tarea para esta etapa del proyecto integrador es convertir la lista de edades a un arreglo de NumPy y calcular el promedio de edad de las personas participantes en el estudio.</p>
+
+<h2>Parte 2: Carga de datos</h2>
+<p>Continuando con la anterior sección del proyecto integrador, ahora debes realizar lo siguiente:</p>
+<ul>
+    <li>Convertir la estructura Dataset en un DataFrame de Pandas usando pd.DataFrame.</li>
+    <li>Separar el dataframe en dos diferentes, uno conteniendo las filas con personas que perecieron (is_dead=1) y otro con el complemento.</li>
+    <li>Calcular los promedios de las edades de cada dataset e imprimir.</li>
+</ul>
+
