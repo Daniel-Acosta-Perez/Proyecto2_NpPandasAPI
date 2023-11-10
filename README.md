@@ -43,3 +43,13 @@
     <li>Verificar que los tipos de datos son correctos en cada colúmna (por ejemplo que no existan colúmnas numéricas en formato de cadena).</li>
     <li>Calcular la cantidad de hombres fumadores vs mujeres fumadoras (usando agregaciones en Pandas).</li>
 </ul>
+
+<h2>Parte 4: Procesando información en bruto</h2>
+
+<p>Imagina que no tuvieramos el acceso fácil de estos datos a través de la librería y tuvieramos que descargar los datos usando requests.</p>
+
+<ul>
+    <li>Realiza un GET request para descargarlos y escribe la respuesta como un archivo de texto plano con extensión csv (no necesitas pandas para esto, sólo manipulación de archivos nativa de Python)</li>
+    <li>Agrupa el código para esto en una función reutilizable que reciba como argumento la url.</li>
+</ul>
+
