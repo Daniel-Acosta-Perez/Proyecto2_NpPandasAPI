@@ -21,16 +21,15 @@ def download_csv(url, filename):
     try:
         response = requests.get(url)
         response.raise_for_status()
+        status_code = response.status_code
 
-        if response.headers.get('content-type') == 'text/csv':
+        if status_code == requests.codes.ok:
             with open(filename, 'wb') as f:
                 f.write(response.content)
             print('Descarga finalizada')
-        else:
-            #print(response.headers)
-            raise CustomException(f'Status code: {response.status_code}.\nEl archivo no es un CSV válido. ')
-            
     except requests.exceptions.HTTPError as e:
         print(f'HTTP Error occurred: {str(e)}')
     except requests.exceptions.RequestException as e:
         print(f'Request Error occurred: {str(e)}')
+    except ValueError as e:
+        print(f'Value Error occurred: {str(e)}')
