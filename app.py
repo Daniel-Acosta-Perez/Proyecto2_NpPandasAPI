@@ -64,4 +64,4 @@ url = 'https://huggingface.co/datasets/mstz/heart_failure/raw/main/heart_failure
 
 url2 = 'https://people.sc.fsu.edu/~jburkardt/data/csv/snakes_count_10.csv'
 
-download_csv(url, 'data2.csv')
+download_csv(url, 'data4.csv')
