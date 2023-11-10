@@ -1,0 +1,4 @@
+#ignorar carpeta pychache
+__pycache__/
+#ignorar archivos csv
+*.csv

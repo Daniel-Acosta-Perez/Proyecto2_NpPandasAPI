@@ -1,4 +1,5 @@
 from datasets import load_dataset
+from down_csv import download_csv
 import numpy as np
 import pandas as pd
 
@@ -55,4 +56,12 @@ num_smoking_men = df_men[df_men['is_smoker'] == 1]['is_smoker'].count()
 num_smoking_women = df_women[df_women['is_smoker'] == 1]['is_smoker'].count()
 
 print(f"Hombres fumadores: {num_smoking_men}") 
-print(f"Mujeres fumadoras: {num_smoking_women}")
+print(f"Mujeres fumadoras: {num_smoking_women}\n")
+
+
+#? Implementacion API, parte 4
+url = 'https://huggingface.co/datasets/mstz/heart_failure/raw/main/heart_failure_clinical_records_dataset.csv'
+
+url2 = 'https://people.sc.fsu.edu/~jburkardt/data/csv/snakes_count_10.csv'
+
+download_csv(url, 'data2.csv')
