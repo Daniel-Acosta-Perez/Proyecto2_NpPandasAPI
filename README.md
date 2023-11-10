@@ -1,4 +1,4 @@
-<h1> Proyecto 2</h1>
+<h1> Proyecto 2; manejo de numpy, pandas y APIs</h1>
 
 <h2>Parte 1: Introducción al análisis de datos</h2>
 
@@ -52,3 +52,4 @@
     <li>Realiza un GET request para descargarlos y escribe la respuesta como un archivo de texto plano con extensión csv (no necesitas pandas para esto, sólo manipulación de archivos nativa de Python)</li>
     <li>Agrupa el código para esto en una función reutilizable que reciba como argumento la url.</li>
 </ul>
+
