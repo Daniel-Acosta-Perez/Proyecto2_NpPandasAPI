@@ -1,4 +1,5 @@
 from datasets import load_dataset
+from clean_prepare import clean_and_prepare
 from down_csv import download_csv
 import numpy as np
 import pandas as pd
@@ -65,3 +66,5 @@ url = 'https://huggingface.co/mstz/heart_failure/raw/main/heart_failure_clinical
 
 download_csv(url, 'data4.csv')
 
+df = pd.read_csv('data4.csv')
+df_cleaned = clean_and_prepare(df)
