@@ -1,4 +1,3 @@
-import json
 import requests
 
 class CustomException(Exception):
@@ -22,7 +21,6 @@ def download_csv(url, filename):
         response = requests.get(url)
         response.raise_for_status()
         status_code = response.status_code
-
         if status_code == requests.codes.ok:
             with open(filename, 'wb') as f:
                 f.write(response.content)

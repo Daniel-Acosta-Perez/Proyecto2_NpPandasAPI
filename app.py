@@ -60,8 +60,8 @@ print(f"Mujeres fumadoras: {num_smoking_women}\n")
 
 
 #? Implementacion API, parte 4
-url = 'https://huggingface.co/datasets/mstz/heart_failure/raw/main/heart_failure_clinical_records_dataset.csv'
+url = 'https://huggingface.co/mstz/heart_failure/raw/main/heart_failure_clinical_records_dataset'
 
-url2 = 'https://people.sc.fsu.edu/~jburkardt/data/csv/snakes_count_10.csv'
 
 download_csv(url, 'data4.csv')
+
