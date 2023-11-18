@@ -53,3 +53,24 @@
     <li>Agrupa el código para esto en una función reutilizable que reciba como argumento la url.</li>
 </ul>
 
+<h2>Parte 5: Limpieza y preparación de datos</h2>
+
+<p>Una vez cargado el csv mediante el request anterior, realiza lo siguiente:</p>
+
+<ol>
+    <li>Verificar que no existan valores faltantes</li>
+    <li>Verificar que no existan filas repetidas</li>
+    <li>Verificar si existen valores atípicos y eliminarlos</li>
+    <li>Crear una columna que categorice por edades
+        <ul>
+                <li>0-12: Niño</li>
+                <li>13-19: Adolescente</li>
+                <li>20-39: Jóvenes adulto</li>
+                <li>40-59: Adulto</li>
+                <li>60-...: Adulto mayor</li>
+        </ul>
+    </li>
+    <li>Guardar el resultado como csv</li>
+</ol>
+
+<p>Encapsula toda la lógica anterior en una función que reciba un dataframe como entrada.</p>
