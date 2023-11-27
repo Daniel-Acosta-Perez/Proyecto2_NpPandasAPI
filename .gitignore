@@ -2,3 +2,5 @@
 __pycache__/
 #ignorar archivos csv
 *.csv
+#carpeta pytest-cache
+__.pytest_cache__/

@@ -74,3 +74,20 @@
 </ol>
 
 <p>Encapsula toda la lógica anterior en una función que reciba un dataframe como entrada.</p>
+
+<h2>Parte 6: Automatizando el proceso</h2>
+
+<p>Imagina que los datos que procesaste en anteriores etapas del proyecto integrador se van actualizando cada cierto tiempo, (manteniendo el formato) y la url siempre va apuntando a la versión más actual, en este caso conviene tener automatizado el procesamiento en un script que pedas llamar y siempre te dé un csv limpio y listo para su análisis.</p>
+
+<p>Tu tarea en esta etapa del proyecto consiste en crear un script (un archivo .py) que realice todas las operaciones vistas hasta ahora (desde el módulo de APIS) que al ejecutarse:</p>
+
+<ol>
+    <li>Descargue los datos desde una url</li>
+    <li>Convierta todo a un dataframe</li>
+    <li>Categorice en grupos</li>
+    <li>Exporte un csv resultante</li>
+</ol>
+
+<p>La URL a usar y obtener los datos es: 'https://huggingface.co/datasets/mstz/heart_failure/raw/main/heart_failure_clinical_records_dataset.csv'</p>
+
+<p>La url no debe estar definida como una constante en el código, en su lugar usa argumentos por terminal <a href='https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/'>(revisar este enlace)<a> para enviarle la url al programa al ejecutarlo.</p>
