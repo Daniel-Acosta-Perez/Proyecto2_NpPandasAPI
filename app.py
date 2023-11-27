@@ -61,10 +61,10 @@ print(f"Mujeres fumadoras: {num_smoking_women}\n")
 
 
 #? Implementacion API, parte 4
-url = 'https://huggingface.co/mstz/heart_failure/raw/main/heart_failure_clinical_records_dataset'
+url = 'https://huggingface.co/datasets/mstz/heart_failure/raw/main/heart_failure_clinical_records_dataset.csv'
 
 
-download_csv(url, 'data4.csv')
+download_csv(url, 'data5.csv')
 
 df = pd.read_csv('data4.csv')
 df_cleaned = clean_and_prepare(df)
