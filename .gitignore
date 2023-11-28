@@ -4,3 +4,6 @@ __pycache__/
 *.csv
 #carpeta pytest-cache
 __.pytest_cache__/
+
+#imagenes
+*.png

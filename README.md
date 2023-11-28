@@ -91,3 +91,24 @@
 <p>La URL a usar y obtener los datos es: 'https://huggingface.co/datasets/mstz/heart_failure/raw/main/heart_failure_clinical_records_dataset.csv'</p>
 
 <p>La url no debe estar definida como una constante en el código, en su lugar usa argumentos por terminal <a href='https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/'>(revisar este enlace)<a> para enviarle la url al programa al ejecutarlo.</p>
+
+<h2>Parte 7: Analizando distribuciones 1</h2>
+<p>Una vez tenemos los datos exportados por nuestro script de ETL, podemos proceder a realizar gráficas de análisis. En esta etapa del proyecto usa matplotlib para:</p>
+
+<ol>
+    <li>Graficar la distribución de edades con un histograma</li>
+    <li>Graficar histogramas agrupado por hombre y mujer:
+        <ul>
+                <li>cantidad de anémicos</li>
+                <li>cantidad de diabéticos</li>
+                <li>cantidad de fumadores</li>
+                <li>cantidad de muertos</li>
+        </ul>
+    </li>
+</ol>
+
+<p>El segundo histograma debe verse así:</p>
+<img src="https://media.ada-school.org/5fcd3ac12b22eab4d301d819/61345ed31a244b00166eb22c/figure_1-9757dc9d-1ae7-47b3-b30b-ba9aa6afcfd5.png" />
+
+
+
