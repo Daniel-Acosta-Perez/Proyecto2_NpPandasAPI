@@ -75,6 +75,34 @@ def plot_gender_comparison(data):
     fig.savefig('gender_comparison.png')
     plt.show()
 
+def plot_pie_charts(dataframe):
+    sns.set(style="whitegrid")
+    fig, axs = plt.subplots(2, 2, figsize=(10, 8))
+
+    def plot_pie(ax, data, labels_map, title):
+        values = data.value_counts()
+        labels = [labels_map[x] for x in values.index]
+        ax.pie(values, labels=labels, autopct='%1.1f%%', startangle=90, colors=sns.color_palette('pastel'))
+        ax.set_title(title)
+
+    labels_map_anemicos = {0: 'No Anémicos', 1: 'Anémicos'}
+    plot_pie(axs[0, 0], dataframe['anaemia'], labels_map_anemicos, 'Anemicos')
+
+    labels_map_diabetes = {0: 'No diabético', 1: 'Diabético'}
+    plot_pie(axs[0, 1], dataframe['diabetes'], labels_map_diabetes, 'Diabeticos')
+
+    labels_map_fumador = {0: 'No Fumador', 1: 'Fumador'}
+    plot_pie(axs[1, 0], dataframe['smoking'], labels_map_fumador, 'Fumadores')
+
+    labels_map_muertos = {0: 'No Fallecido', 1: 'Fallecido'}
+    plot_pie(axs[1, 1], dataframe['DEATH_EVENT'], labels_map_muertos, 'Fallecidos')
+
+    plt.subplots_adjust(wspace=0.4, hspace=0.4)
+    fig.suptitle('Diagramas de Torta por Característica', fontsize=16)
+
+    fig.savefig('tortas_por_caracteristica.png')
+    plt.show()
+
 def main():
     # Cargar el archivo 'cleaned_data.csv'
     clean_data = pd.read_csv('cleaned_data.csv')
@@ -83,6 +111,9 @@ def main():
     plot_age_distribution(clean_data)
     # Mostrar comparacion por caracteristicas
     plot_gender_comparison(clean_data)
+
+    #Parte 8, grafico tortas
+    plot_pie_charts(clean_data)
 
 if __name__ == "__main__":
     main()

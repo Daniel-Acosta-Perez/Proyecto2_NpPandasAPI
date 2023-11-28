@@ -111,4 +111,16 @@
 <img src="https://media.ada-school.org/5fcd3ac12b22eab4d301d819/61345ed31a244b00166eb22c/figure_1-9757dc9d-1ae7-47b3-b30b-ba9aa6afcfd5.png" />
 
 
+<h2>Parte 8: Analizando distribuciones 2</h2>
+
+<p>Usando el mismo DataFrame, realiza una gráfica usando subplots, que contenga gráficas de torta que represente las distribuciones de:</p>
+
+<ol>
+    <li>Cantidad de anémicos</li>
+    <li>Cantidad de diabéticos</li>
+    <li>Cantidad de fumadores</li>
+    <li>Cantidad de muertos</li>
+</ol>
+<p>La grafica debe verse similar a esta (no es necesario el mismo color)</p>
+<img src="https://media.ada-school.org/5fcd3ac12b22eab4d301d819/61345ed31a244b00166eb22c/figure_2-32e72543-83e1-4fe3-9a16-80976778b67e.png" />
 
